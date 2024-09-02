@@ -14,7 +14,7 @@ const SinglePost = () => {
     const fetchBlogPost = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:3000/api/v1/blog/single-blog/${postId}`
+          `https://self-blog-backend.onrender.com/api/v1/blog/single-blog/${postId}`
         );
         setBlogPost(response.data);
       } catch (error) {
@@ -30,7 +30,7 @@ const SinglePost = () => {
   const handleDelete = async () => {
     try {
       await axios.post(
-        `http://localhost:3000/api/v1/blog/delete-blog/${postId}`
+        `https://self-blog-backend.onrender.com/api/v1/blog/delete-blog/${postId}`
       );
       alert("Blog post deleted successfully");
       navigate("/");

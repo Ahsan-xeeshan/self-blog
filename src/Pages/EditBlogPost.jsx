@@ -16,7 +16,7 @@ const EditBlogPost = () => {
     const fetchBlogPost = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:3000/api/v1/blog/single-blog/${postId}`
+          `https://self-blog-backend.onrender.com/api/v1/blog/single-blog/${postId}`
         );
         setBlogPost(response.data);
       } catch (error) {
@@ -38,7 +38,7 @@ const EditBlogPost = () => {
     e.preventDefault();
     try {
       await axios.post(
-        `http://localhost:3000/api/v1/blog/update-blog/${postId}`,
+        `https://self-blog-backend.onrender.com/api/v1/blog/update-blog/${postId}`,
         blogPost
       );
       alert("Blog post updated successfully");

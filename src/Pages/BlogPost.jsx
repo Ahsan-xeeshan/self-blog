@@ -13,7 +13,7 @@ const BlogPost = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:3000/api/v1/blog/create-blog",
+        "https://self-blog-backend.onrender.com/api/v1/blog/create-blog",
         {
           title,
           author,
