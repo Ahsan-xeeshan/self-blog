@@ -27,9 +27,9 @@ const Card = () => {
   };
 
   return (
-    <div className="grid grid-cols-3 gap-4">
+    <div className="md:grid grid-cols-3 gap-4">
       {blogData.map((item) => (
-        <div key={item.id} className="p-4 border rounded-lg">
+        <div key={item.id} className="p-4 border rounded-lg my-5">
           <h5 className="font-semibold text-xl mb-2">{item.title}</h5>
           <div className="inline-block p-1 bg-slate-600 rounded-lg mb-3">
             <p className="font-medium text-white text-sm">

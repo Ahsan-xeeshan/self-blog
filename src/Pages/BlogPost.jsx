@@ -37,7 +37,7 @@ const BlogPost = () => {
       </h2>
       <form
         onSubmit={handleSubmit}
-        className="w-[850px] border rounded-md p-4 mx-auto "
+        className="w-[300px] md:w-[850px] border rounded-md p-4 mx-auto "
       >
         <div>
           <label htmlFor="title" className="block font-medium">
@@ -81,7 +81,7 @@ const BlogPost = () => {
         {message && <p className="text-red-500">{message}</p>}
         <button
           type="submit"
-          className="bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600"
+          className="bg-blue-500 text-white mt-5 py-2 px-4 rounded-md hover:bg-blue-600"
         >
           Post Blog
         </button>
