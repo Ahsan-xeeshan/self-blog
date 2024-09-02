@@ -48,9 +48,11 @@ const Navbar = () => {
           </div>
           <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
             <div className="flex flex-shrink-0 items-center">
-              <h1 className="h-8 w-auto text-2xl text-white font-bold">
-                SELF BLOG
-              </h1>
+              <Link to="/">
+                <h1 className="h-8 w-auto text-2xl text-white font-bold">
+                  SELF BLOG
+                </h1>
+              </Link>
             </div>
             <div className="hidden sm:ml-6 sm:block">
               <div className="flex space-x-4">
@@ -96,25 +98,13 @@ const Navbar = () => {
             className="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white"
             aria-current="page"
           >
-            Dashboard
+            Home
           </a>
           <a
             href="#"
             className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
           >
-            Team
-          </a>
-          <a
-            href="#"
-            className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
-          >
-            Projects
-          </a>
-          <a
-            href="#"
-            className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
-          >
-            Calendar
+            Blog Post
           </a>
         </div>
       </div>
